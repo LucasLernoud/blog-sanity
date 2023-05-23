@@ -1,8 +1,11 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      {/* <div className={`${inter.variable} font-sans`}> */}
+      <Component {...pageProps} /> {/* </div> */}
+    </>
+  );
 }
-
-export default MyApp
